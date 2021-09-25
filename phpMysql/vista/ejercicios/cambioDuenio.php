@@ -5,8 +5,7 @@ include_once("../estructura/cabecera.php");
         <div class="text-center p-3">
             <h3>Cambio de dueño</h3>
         </div>
-        <form id="formPersona" name="formPersona" method="post" action="../accion/accionCambioDuenio.php"
-              onsubmit="return validarCambio();" novalidate>
+        <form id="formPersona" class="was-validated" name="formPersona" method="post" action="../accion/accionCambioDuenio.php" novalidate>
             <div class="form-floating mb-3">
                 <input class="form-control" id="dni" name="dni" type="text" placeholder="DNI" required>
                 <label for="dni">DNI</label>

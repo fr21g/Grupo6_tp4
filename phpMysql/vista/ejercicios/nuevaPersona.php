@@ -6,12 +6,13 @@ include_once("../estructura/cabecera.php");
 
     <h1>NUEVA PERSONA</h1>
     <p class="lead">
-        <form  method="post" action="../accion/accionNuevaPersona.php">
+        <form  method="post" class="was-validated" action="../accion/accionNuevaPersona.php">
             <div class="row">
                 <div class="col py-3 px-lg-5  ">
                 DNI</div>
                 <div class="col py-3 px-lg-5  ">
-                    <input id="dni" name ="dni" type="text" >
+                    <input id="dni" name ="dni" class="form-control" type="number" required>
+                    <div class="invalid-feedback">Ingrese un DNI.</div><br>
                 </div>
             </div>
             <div class="row">
@@ -19,7 +20,8 @@ include_once("../estructura/cabecera.php");
                 Apellido
             </div>
                 <div class="col py-3 px-lg-5  ">
-                    <input id="apellido" name ="apellido" type="text" >
+                    <input id="apellido" name ="apellido" class="form-control" type="text" required>
+                    <div class="invalid-feedback">Ingrese apellido.</div><br>
                 </div>
             </div>
             <div class="row">
@@ -27,7 +29,8 @@ include_once("../estructura/cabecera.php");
                     Nombre
             </div>
             <div class="col py-3 px-lg-5  ">
-                <input id="nombre" name ="nombre" type="text" >
+                <input id="nombre" name ="nombre" class="form-control" type="text" required>
+                <div class="invalid-feedback">Ingrese nombre.</div><br>
             </div>
             </div>
             <div class="row">
@@ -35,7 +38,8 @@ include_once("../estructura/cabecera.php");
                     Fecha Nac
                 </div>
                 <div class="col py-3 px-lg-5  ">
-                    <input id="fecha" name ="fecha" type="text" >
+                    <input id="fecha" name ="fecha" class="form-control" type="date" required>
+                    <div class="invalid-feedback">Ingrese fecha de nacimiento.</div><br>
                 </div>
             </div>
             <div class="row">
@@ -43,7 +47,8 @@ include_once("../estructura/cabecera.php");
                     Telefono
                 </div>
                 <div class="col py-3 px-lg-5  ">
-                <input id="telefono" name ="telefono" type="text">
+                <input class="form-control" id="telefono" name ="telefono" type="text" required>
+                <div class="invalid-feedback">Ingrese un telefono.</div><br>
                 </div>
             </div>
             <div class="row">
@@ -51,7 +56,8 @@ include_once("../estructura/cabecera.php");
                     Domicilio
                 </div>
                 <div class="col py-3 px-lg-5  ">
-                <input id="domicilio" name ="domicilio" type="text">
+                <input class="form-control" id="domicilio" name ="domicilio" type="text" required>
+                <div class="invalid-feedback">Ingrese una domicilio.</div><br>
                 </div>
             </div>
             <div class="col py-3 px-lg-5  ">

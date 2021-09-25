@@ -33,7 +33,7 @@ $encontro = false;
             }
         }
     }
-    if($encontro){
+    if(!$encontro){
         echo 'No se encontro autos.';
     }
 ?>
